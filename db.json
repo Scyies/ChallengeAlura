@@ -1,0 +1,130 @@
+{
+    "produtos": [
+        {
+            "row": "starwars",
+            "imagem": "img/produtos R1/produto1r1.jpg",
+            "nome": "Produto XYZ",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "starwars",
+            "imagem": "img/produtos R1/produto2r1.jpg",
+            "nome": "Produto XYZ",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "starwars",
+            "imagem": "img/produtos R1/produto3r1.jpg",
+            "nome": "Produto XYZ",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "starwars",
+            "imagem": "img/produtos R1/produto4r1.jpg",
+            "nome": "Produto XYZ",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "starwars",
+            "imagem": "img/produtos R1/produto5r1.jpg",
+            "nome": "Produto XYZ",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "starwars",
+            "imagem": "img/produtos R1/produto6r1.jpg",
+            "nome": "Produto XYZ",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "console",
+            "imagem": "img/produtos R2/produto1r2.jpg",
+            "nome": "Controle XYZ",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "console",
+            "imagem": "img/produtos R2/produto2r2.jpg",
+            "nome": "Controle e console XYZ",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "console",
+            "imagem": "img/produtos R2/produto3r2.jpg",
+            "nome": "Console XYZ",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "console",
+            "imagem": "img/produtos R2/produto4r2.jpg",
+            "nome": "Controle XYZ",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "console",
+            "imagem": "img/produtos R2/produto5r2.jpg",
+            "nome": "Console XYZ",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "console",
+            "imagem": "img/produtos R2/produto6r2.jpg",
+            "nome": "Game Boy Color",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "diversos",
+            "imagem": "img/produtos R3/produto1r3.jpg",
+            "nome": "Camisa Atari",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "diversos",
+            "imagem": "img/produtos R3/produto2r3.jpg",
+            "nome": "Camisa SNES",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "diversos",
+            "imagem": "img/produtos R3/produto3r3.jpg",
+            "nome": "Controle e console",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "diversos",
+            "imagem": "img/produtos R3/produto4r3.jpg",
+            "nome": "Controle e console",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "diversos",
+            "imagem": "img/produtos R3/produto5r3.jpg",
+            "nome": "Controle e console",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        },
+        {
+            "row": "diversos",
+            "imagem": "img/produtos R3/produto6r3.jpg",
+            "nome": "Controle e console",
+            "preco": "R$ 60,00",
+            "descricao": "Ver produto"
+        }
+    ]
+}

@@ -2,8 +2,7 @@ let listaProdutos = [];
 const starWars = document.querySelector('.produtos-primeiraRow');
 const consoles = document.querySelector('.produtos-segundaRow');
 const diversos = document.querySelector('.produtos-terceiraRow');
-const searchBar = document.querySelector('');
-//tirei a query pra não dar problema
+const searchBar = document.querySelector('.header-searchBar');
 
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
@@ -14,6 +13,7 @@ searchBar.addEventListener('keyup', (e) => {
         );
     });
     mostrarProdutos(filteredProducts);
+    console.log(filteredProducts);
 });
 // não sei como funcionaria na home, se for o caso teria que jogar para a página de todos os produtos e lá sim listar.
 

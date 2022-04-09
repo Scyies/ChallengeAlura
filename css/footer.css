@@ -1,0 +1,35 @@
+.footer {
+    background-color: #EAF2FD;
+    height: 368px;
+}
+
+.footer-container {
+    padding: 64px 156px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.footer-logo {
+
+}
+
+.footer-escritas {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-escritas--escrita {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    color: #464646;
+    flex-grow: 1;
+}
+
+.footer-faleConosco {
+    display: flex;
+    flex-direction: column;
+}

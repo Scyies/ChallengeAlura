@@ -1,0 +1,64 @@
+.produtos-container {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 152px;
+}
+
+.produtos-titulo--container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.produtos-titulo {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.produtos-titulo--vertudoContainer {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.produtos-titulo-vertudo {
+    color: #2a7ae4;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.produtos-primeiraRow, .produtos-segundaRow, .produtos-terceiraRow {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.produto {
+    margin-right: 8px;
+}
+
+.produto-nome {
+    font-weight: 500;
+    font-size: 14px;
+    color: #464646;
+    margin: 8px 0;
+}
+
+.produto-preco {
+    font-weight: 700;
+    font-size: 16px;
+    color: #464646;
+    margin: 8px 0;
+}
+
+.produto-verProduto {
+    color: #2a7ae4;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 8px 0;
+    text-decoration: none;
+}
+
+.produto-verProduto--link {
+    text-decoration: none;
+}

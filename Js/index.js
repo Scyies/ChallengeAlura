@@ -25,7 +25,7 @@ const mostrarProdutos = (produtos) => {
                 <img class='imagem-produto' src='${produto.imagem}'></img>
                 <p class='produto-nome'>${produto.nome}</p>
                 <p class='produto-preco'>${produto.preco}</p>
-                <a href='descricao-produtos-page.html'><p class='produto-verProduto'>${produto.descricao}</p>
+                <a href='descricao-produtos-page.html' class='produto-verProduto--link'><p class='produto-verProduto'>${produto.descricao}</p>
             `;
             starWars.appendChild(primeiraRowProdutos);
         };
@@ -37,7 +37,7 @@ const mostrarProdutos = (produtos) => {
                 <img class='imagem-produto' src='${produto.imagem}'></img>
                 <p class='produto-nome'>${produto.nome}</p>
                 <p class='produto-preco'>${produto.preco}</p>
-                <a href='descricao-produtos-page.html'><p class='produto-verProduto'>${produto.descricao}</p>
+                <a href='descricao-produtos-page.html' class='produto-verProduto--link'><p class='produto-verProduto'>${produto.descricao}</p>
             `;
             consoles.appendChild(segundaRowProdutos);
         };
@@ -49,7 +49,7 @@ const mostrarProdutos = (produtos) => {
                 <img class='imagem-produto' src='${produto.imagem}'></img>
                 <p class='produto-nome'>${produto.nome}</p>
                 <p class='produto-preco'>${produto.preco}</p>
-                <a href='descricao-produtos-page.html'><p class='produto-verProduto'>${produto.descricao}</p>
+                <a href='descricao-produtos-page.html' class='produto-verProduto--link'><p class='produto-verProduto'>${produto.descricao}</p>
             `;
             diversos.appendChild(terceiraRowProdutos);
         };

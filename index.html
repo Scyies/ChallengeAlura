@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header class="header">
@@ -33,20 +34,67 @@
     </figure>
     <main>
         <section class="produtos-container">
-            <h2 class="produtos-titulo">Star Wars</h2>
+            <div class="produtos-titulo--container">
+                <h2 class="produtos-titulo">Star Wars</h2>
+                <a href="#" class="produtos-titulo--vertudoContainer">
+                    <p class="produtos-titulo-vertudo">Ver tudo</p>
+                    <img src="img/setavetor.png" alt="" class="produtos-titulo-vertudoseta">
+                </a>
+            </div>
+            
             <ul class="produtos-primeiraRow">
 
             </ul>
-            <h2 class="produtos-titulo">Consoles</h2>
+            <div class="produtos-titulo--container">
+                <h2 class="produtos-titulo">Consoles</h2>
+                <a href="#" class="produtos-titulo--vertudoContainer">
+                    <p class="produtos-titulo-vertudo">Ver tudo</p>
+                    <img src="img/setavetor.png" alt="" class="produtos-titulo-vertudoseta">
+                </a>
+            </div>
             <ul class="produtos-segundaRow">
 
             </ul>
-            <h2 class="produtos-titulo">Diversos</h2>
+            <div class="produtos-titulo--container">
+                <h2 class="produtos-titulo">Diversos</h2>
+                <a href="#" class="produtos-titulo--vertudoContainer">
+                    <p class="produtos-titulo-vertudo">Ver tudo</p>
+                    <img src="img/setavetor.png" alt="" class="produtos-titulo-vertudoseta">
+                </a>
+            </div>
             <ul class="produtos-terceiraRow">
 
             </ul>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <section class="footer-logo">
+                <img src= "https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" class="footer-logo--img">
+            </section>
+            <ul class="footer-escritas">
+                <li class="footer-escritas--escrita">Quem somos nós</li>
+                <li class="footer-escritas--escrita">Política de privacidade</p>
+                <li class="footer-escritas--escrita">Programa fidelidade</li>
+                <li class="footer-escritas--escrita">Nossas lojas</li>
+                <li class="footer-escritas--escrita">Quero ser franqueado</p>
+                <li class="footer-escritas--escrita">Anuncie aqui</p>
+            </ul>
+            <section class="footer-faleConosco">
+                <p>Fale Conosco</p>
+                <div class="footer-inputNome--container">
+                    <label for="footer-nome--faleConosco">Nome</label>
+                    <input id="footer-nome--faleConosco">
+                </div>
+                <textarea class="footer-mensagem--faleConosco" placeholder="Escreva sua mensagem"></textarea>
+                <button class="footer-btn--faleConosco">Enviar mensagem</button>
+            </section>
+        </div>
+    </footer>
+    <div class="rodape-contato">
+        <label>Desenvolvido por Sério Valério</label>
+        <label>2022</label>
+    </div>
     <script src="js/index.js"></script>
 </body>
 </html>

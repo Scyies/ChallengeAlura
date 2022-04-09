@@ -1,7 +1,5 @@
 let listaProdutos = [];
-const starWars = document.querySelector('.produtos-primeiraRow');
-const consoles = document.querySelector('.produtos-segundaRow');
-const diversos = document.querySelector('.produtos-terceiraRow');
+
 const searchBar = document.querySelector('.header-searchBar');
 
 searchBar.addEventListener('keyup', (e) => {
@@ -33,6 +31,7 @@ const carregaProdutos = async () => {
 const mostrarProdutos = (produtos) => {
     produtos.forEach((produto) => {
         if (produto.row == "starwars") {
+            const starWars = document.querySelector('.produtos-primeiraRow');
             const primeiraRowProdutos = document.createElement("li");
             primeiraRowProdutos.classList.add("produto");
             primeiraRowProdutos.innerHTML =
@@ -45,6 +44,7 @@ const mostrarProdutos = (produtos) => {
             starWars.appendChild(primeiraRowProdutos);
         };
         if (produto.row == "console") {
+            const consoles = document.querySelector('.produtos-segundaRow');
             const segundaRowProdutos = document.createElement("li");
             segundaRowProdutos.classList.add("produto");
             segundaRowProdutos.innerHTML = 
@@ -57,6 +57,7 @@ const mostrarProdutos = (produtos) => {
             consoles.appendChild(segundaRowProdutos);
         };
         if (produto.row == "diversos") {
+            const diversos = document.querySelector('.produtos-terceiraRow');
             const terceiraRowProdutos = document.createElement("li");
             terceiraRowProdutos.classList.add("produto");
             terceiraRowProdutos.innerHTML = 
@@ -67,7 +68,7 @@ const mostrarProdutos = (produtos) => {
                 <a href='descricao-produtos-page.html' class='produto-verProduto--link'><p class='produto-verProduto'>${produto.descricao}</p>
             `;
             diversos.appendChild(terceiraRowProdutos);
-        };
+        }
                 
     })
 

@@ -1,9 +1,13 @@
+.main-todos-produtos {
+    padding-top: 70px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
 .container-titulo-btn {
     display: flex;
     justify-content: space-between;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 70px;
+    margin-bottom: 33px;
     align-items: center;
 }
 
@@ -24,5 +28,9 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr;
     column-gap: 1%;
-    margin-bottom: 64px;
+    padding-bottom: 64px;
+}
+
+.produto {
+    margin-bottom: 60px;
 }

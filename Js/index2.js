@@ -1,3 +1,4 @@
+"use strict";
 let listaProdutos = [];
 const searchBar = document.querySelector('.header-searchBar');
 
@@ -27,6 +28,7 @@ const carregaProdutos = async () => {
 };
 
 const mostrarProdutos = (produtos) => {
+    console.log(produtos);
     produtos.forEach((produto) => {
         const row = document.querySelector('.produtos');
         const div = document.createElement("div");
@@ -36,10 +38,10 @@ const mostrarProdutos = (produtos) => {
                 <img class='imagem-produto' src='${produto.imagem}'></img>
                 <p class='produto-nome'>${produto.nome}</p>
                 <p class='produto-preco'>${produto.preco}</p>
-                <a href='descricao-produtos-page.html' class='produto-verProduto--link'><p class='produto-verProduto'>${produto.descricao}</p>
+                <p class='produto-nome'>${produto.quantidade}</p>
                 `;
         row.appendChild(div);
-
+        
     })}
 
 carregaProdutos();

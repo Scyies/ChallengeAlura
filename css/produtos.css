@@ -13,6 +13,7 @@
 .produtos-titulo {
     font-weight: 700;
     font-size: 32px;
+    color: #464646;
 }
 
 .produtos-titulo--vertudoContainer {
@@ -67,10 +68,9 @@
     color: #2a7ae4;
     font-weight: 700;
     font-size: 16px;
-    margin: 8px 0;
     text-decoration: none;
-}
-
-.produto-verProduto--link {
-    text-decoration: none;
+    border: none;
+    background-color: #e5e5e5;
+    cursor: pointer;
+    padding-left: 0;
 }

@@ -7,7 +7,7 @@ const criaNovoProduto = (imagem, nome, preco, descricao) => {
     <img class='imagem-produto' src='${imagem}'></img>
     <p class='produto-nome'>${nome}</p>
     <p class='produto-preco'>${preco}</p>
-    <a href='descricao-produto.html' class='produto-verProduto--link'><p class='produto-verProduto'>${descricao}</p>
+    <button id='verProdutobtn' onclick='mostrarProdutoDescricao()' class='produto-verProduto--link produto-verProduto'>${descricao}</button>
     `;
     linhaProdutoNovo.innerHTML = conteudo;
     return linhaProdutoNovo;

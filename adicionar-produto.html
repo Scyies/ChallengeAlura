@@ -28,7 +28,11 @@
     <main class="main-form">
         <h2 class="form-titulo">Adicionar novo produto</h2>
         <form class="form" data-form>
-            <input type="image" name="" class="form-image" required data-imagem>
+            <div class="image-input-container">
+                <input type="image" name="" class="form-image" src="img/image-input.png" required data-imagem>
+                <!-- tenho que mudar isso o input type img só faz com que o botão input seja uma img -->
+
+            </div>
             <div class="form-div">
                 <label for="form-nome" class="form-label">Nome do produto</label>
                 <input type="text" id="form-nome" required data-nome>

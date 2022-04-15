@@ -26,15 +26,17 @@
     </header>
 <main class="login">
     <h1 class="login-titulo">Iniciar Sessão</h1>
-    <div class="login-email--container">
-        <label for="login-email">Escreva seu email</label>
-        <input type="email" id="login-email" class="input">
-    </div>
-    <div class="login-senha--container">
-        <label for="login-senha">Escreva sua senha</label>
-    <input type="password" id="login-senha" class="input">
-    </div>
-    <button type="submit" class="login-entrar botao">Entrar</button>
+    <form class="login-form">
+        <div class="login-email--container">
+            <label for="login-email">Escreva seu login</label>
+            <input type="text" id="login-email" class="input" placeholder="Escreva seu login">
+        </div>
+        <div class="login-senha--container">
+            <label for="login-senha">Escreva sua senha</label>
+            <input type="password" id="login-senha" class="input" placeholder="Escreva sua senha">
+        </div>
+        <button type="submit" class="login-entrar botao">Entrar</button>
+    </form>
 </main>
     <footer class="footer">
         <div class="footer-container">
@@ -56,7 +58,7 @@
                     <input id="footer-nome--faleConosco">
                 </div>
                 <textarea class="footer-mensagem--faleConosco" placeholder="Escreva sua mensagem"></textarea>
-                <button class="footer-btn--faleConosco">Enviar mensagem</button>
+                <button onclick="adminLogin()" class="footer-btn--faleConosco">Enviar mensagem</button>
             </section>
         </div>
     </footer>
@@ -64,5 +66,6 @@
         <label>Desenvolvido por Sério Valério</label>
         <label>2022</label>
     </div>
-    <script src="js/index.js"></script>
+    <script type="module" src="./Js/Login/index.js"></script>
+    <!-- <script src="./Js/Login/loginTeste.js"></script> -->
 </body>

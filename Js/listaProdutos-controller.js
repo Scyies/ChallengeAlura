@@ -16,19 +16,6 @@ const criaNovoProduto = (imagem, nome, preco, descricao, id) => {
 
 const repositorio = document.querySelector('.produtos');
 
-//quando colocar btn para remover produto
-// repositorio.addEventListener('click', (evento) => {
-//     let botaoDeletar = evento.target.className === '';
-//     if (botaoDeletar) {
-//         const linhaProduto = evento.target.closest('');
-//         let id = linhaProduto.dataset.id;
-//         produtosService.removeProduto(id)
-//         .then( () => {
-//             linhaProduto.remove();
-//         })
-//     }
-// })
-
 produtosService.listaProdutos()
 .then(data => {
     data.forEach(elemento => {

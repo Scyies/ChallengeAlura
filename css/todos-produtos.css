@@ -34,3 +34,19 @@
 .produto {
     margin-bottom: 60px;
 }
+
+.imagem-container {
+    position: relative;
+}
+
+.imagem-btn--container {
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.imagem-btn--container input {
+    z-index: 5;
+    margin-left: 1rem;
+}

@@ -1,30 +1,44 @@
-let listaProdutos = [];
+import { produtosService } from "./produtosService.js";
 
-const carregaProdutos = async () => {
-    try {
-        const res = await fetch('http://localhost:3000/produtos');
-        listaProdutos = await res.json();
-        mostrarProdutos(listaProdutos);
+const criaNovoProduto = (imagem, nome, preco, quantidade, id) => {
+    const linhaProdutoNovo = document.createElement('div');
+    linhaProdutoNovo.classList.add("produto");
+    const conteudo = `
+                <div class='imagem-container'>
+                    <div class='imagem-btn--container'>
+                        <input type='image' id='btn-excluir' src='../img/VectorExcluir.png'</input>
+                        <input type='image' id='btn-editar' src='../img/VectorEditar.png'</input>
+                    </div>    
+                    <img class='imagem-produto' src='${imagem}'></img>
+                </div>
+                <p class='produto-nome'>${nome}</p>
+                <p class='produto-preco'>${preco}</p>
+                <p class='produto-nome'>${quantidade}</p>
+    `;
+    linhaProdutoNovo.innerHTML = conteudo;
+    linhaProdutoNovo.dataset.id = id;
+    return linhaProdutoNovo;
+}
+
+const repositorio = document.querySelector('.produtos');
+
+// quando colocar btn para remover produto
+repositorio.addEventListener('click', (evento) => {
+    let botaoDeletar = evento.target.className === '';
+    if (botaoDeletar) {
+        console.log("alo")
+        // const linhaProduto = evento.target.closest('');
+        // let id = linhaProduto.dataset.id;
+        // produtosService.removeProduto(id)
+        // .then( () => {
+        //     linhaProduto.remove();
+        // })
     }
-    catch (err) {
-        console.log(err);
-    }
-};
+})
 
-const mostrarProdutos = (produtos) => {
-    produtos.forEach((produto) => {
-        const row = document.querySelector('.produtos');
-        const div = document.createElement("div");
-        div.classList.add("produto");
-
-        div.innerHTML = `
-                <img class='imagem-produto' src='${produto.imagem}'></img>
-                <p class='produto-nome'>${produto.nome}</p>
-                <p class='produto-preco'>${produto.preco}</p>
-                <p class='produto-nome'>${produto.quantidade}</p>
-                `;
-        row.appendChild(div);
-        
-    })}
-
-carregaProdutos();
+produtosService.listaProdutos()
+.then(data => {
+    data.forEach(elemento => {
+        repositorio.appendChild(criaNovoProduto(elemento.imagem, elemento.nome, elemento.preco, elemento.descricao, elemento.id))
+    })
+});

@@ -18,7 +18,7 @@
         <section class="header-logoSearch">
                 <a href="#" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
                 <div class="header-searchBar--container">
-                    <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?">
+                    <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?" data-search>
                     <img src="img/lupa png" alt="" class="header-searchBar-lupa">
                 </div>
         </section>
@@ -65,6 +65,14 @@
             <ul class="produtos-terceiraRow">
 
             </ul>
+            <template data-template>
+                <div class="produto">
+                    <img src="" alt="" class="imagem-produto">
+                    <p class="produto-nome"></p>
+                    <p class="produto-preco"></p>
+                    <button id="verProdutobtn" class="produto-verProduto--link produto-verProduto">Ver produto</button>
+                </div>
+            </template>
         </section>
     </main>
     <footer class="footer">
@@ -96,6 +104,5 @@
         <label>2022</label>
     </div>
     <script type="module" src="js/controllerProdutos-home.js"></script>
-    <script src="js/verProduto.js"></script>
 </body>
 </html>

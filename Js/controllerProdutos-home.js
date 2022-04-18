@@ -1,34 +1,45 @@
 import { produtosService } from "./produtosService.js";
 
-const criaNovoProduto = (imagem, nome, preco, descricao, id) => {
-    const linhaProdutoNovo = document.createElement('div');
-    linhaProdutoNovo.classList.add("produto");
-    const conteudo = `
-    <img class='imagem-produto' src='${imagem}'></img>
-    <p class='produto-nome'>${nome}</p>
-    <p class='produto-preco'>${preco}</p>
-    <button id='verProdutobtn' class='produto-verProduto--link produto-verProduto'>Ver produto</button>
-    `;
-    linhaProdutoNovo.innerHTML = conteudo;
-    linhaProdutoNovo.dataset.id = id;
-    return linhaProdutoNovo;
-}
-
+const produtosTemplate = document.querySelector('[data-template]');
 const starwars = document.querySelector('.produtos-primeiraRow');
 const consoles = document.querySelector('.produtos-segundaRow');
 const diversos = document.querySelector('.produtos-terceiraRow');
+const searchInput = document.querySelector('[data-search]');
 
+let produtos = []
+
+searchInput.addEventListener('input', e => {
+    const value = e.target.value.toLowerCase()
+    produtos.forEach(produto => {
+        const isVisible = produto.nome.toLowerCase().includes(value) 
+    produto.element.classList.toggle('hide', !isVisible)  //para deixar os que não são buscados invisiveis
+    })
+    // if (!starwars.produto.nome.toLowerCase().includes(value)){
+    //     starwars.classList.toggle('hide');
+    // }
+})
 produtosService.listaProdutos()
 .then(data => {
-    data.forEach(elemento => {
-        if (elemento.row == "starwars") {
-            starwars.appendChild(criaNovoProduto(elemento.imagem, elemento.nome, elemento.preco, elemento.descricao))
+    produtos = data.map(produto => {
+        const card = produtosTemplate.content.cloneNode(true).children[0];
+        const nome = card.querySelector('.produto-nome');
+        const preco = card.querySelector('.produto-preco');
+        const imagem = card.querySelector('.imagem-produto');
+
+        nome.textContent = produto.nome
+        preco.textContent = produto.preco
+        imagem.src = produto.imagem
+        if (produto.row == "starwars") {
+            starwars.append(card);
         }
-        if (elemento.row == "console") {
-            consoles.appendChild(criaNovoProduto(elemento.imagem, elemento.nome, elemento.preco, elemento.descricao))
+        if (produto.row == "console") {
+            consoles.append(card);
         }
-        if (elemento.row == "console") {
-            diversos.appendChild(criaNovoProduto(elemento.imagem, elemento.nome, elemento.preco, elemento.descricao))
+        if (produto.row == "diversos") {
+            diversos.append(card);
+        }
+        return {
+            nome: produto.nome, preco: produto.preco, imagem: produto.imagem, element: card
         }
     })
-});
+})

@@ -7,7 +7,7 @@ const criaNovoProduto = (imagem, nome, preco, descricao, id) => {
     <img class='imagem-produto' src='${imagem}'></img>
     <p class='produto-nome'>${nome}</p>
     <p class='produto-preco'>${preco}</p>
-    <button id='verProdutobtn' class='produto-verProduto--link produto-verProduto'>${descricao}</button>
+    <button id='verProdutobtn' class='produto-verProduto--link produto-verProduto'>Ver produto</button>
     `;
     linhaProdutoNovo.innerHTML = conteudo;
     linhaProdutoNovo.dataset.id = id;

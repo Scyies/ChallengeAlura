@@ -29,8 +29,37 @@ const removeProduto = (id) => {
     })
 }
 
+
+//funções para atualizar o produto editado
+export const detalhaProduto = (id) => {
+    return fetch(`http://localhost:3000/produtos/${id}`)
+    .then(resposta => {
+        return resposta.json();
+    })
+}
+
+const atualizaProduto = (id, nome, preco, imagem, descricao) => {
+    return fetch(`http://localhost:3000/produtos/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-type' : 'application/json'
+        },
+        body: JSON.stringify({
+            nome: nome,
+            preco: preco,
+            imagem: imagem,
+            descricao: descricao
+        })
+    })
+    .then (resposta => {
+        return resposta.json()
+    })
+}
+
 export const produtosService = {
     listaProdutos,
     criaProduto,
-    removeProduto
+    removeProduto,
+    detalhaProduto,
+    atualizaProduto
 }

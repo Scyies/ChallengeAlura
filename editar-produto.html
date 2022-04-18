@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek - Login</title>
+    <title>AluraGeek - Adicionar produto</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/produtos.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/todos-produtos.css">
+    <link rel="stylesheet" href="css/adicionar-produto.css">
 </head>
 <body>
     <header class="header">
         <section class="header-logoSearch">
-                <a href="index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
+                <a href="./index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
                 <div class="header-searchBar--container">
                     <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?">
                     <img src="img/lupa png" alt="" class="header-searchBar-lupa">
@@ -25,15 +25,29 @@
         </section>
         <a href="login.html" class="header-login">Login</a>
     </header>
-<main class="main-todos-produtos">
-    <div class="container-titulo-btn">
-        <h1 class="titulo">Todos os produtos</h1>
-        <a href="./adicionar-produto.html" class="adicionar-btn botao">Adicionar produto</a>
-    </div>
-    <section class="produtos">
+    <main class="main-form">
+        <h2 class="form-titulo">Editar produtos</h2>
+        <form class="form" data-form>
+            <div class="image-input-container">
+                <input type="text" name="" class="form-image" src="img/image-input.png" required data-imagem>
+                <!-- tenho que mudar isso o input type img só faz com que o botão input seja uma img -->
 
-    </section>
-</main>
+            </div>
+            <div class="form-div">
+                <label for="form-nome" class="form-label">Nome do produto</label>
+                <input type="text" id="form-nome" required data-nome>
+            </div>
+            <div class="form-div">
+                <label for="form-preco" class="form-label">Preço do produto</label>
+                <input type="text" id="form-preco" required data-preco>
+            </div>
+            <div class="form-div">
+                <label for="form-descricao" class="form-label">Descrição</label>
+                <input type="text" id="form-descricao" required data-descricao>
+            </div>
+            <input type="submit" value="Editar produto" class="botao form-button">
+        </form>
+    </main>
     <footer class="footer">
         <div class="footer-container">
             <section class="footer-logo">
@@ -62,7 +76,6 @@
         <label>Desenvolvido por Sério Valério</label>
         <label>2022</label>
     </div>
-    <script type="module" src="./Js/todosProdutos-controller.js"></script>
-    <!-- <script type="module" src="./Js/atualizaProduto-controller.js"></script> -->
+    <script type="module" src="./Js/atualizaProduto-controller.js"></script>
 </body>
 </html>

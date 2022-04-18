@@ -7,7 +7,7 @@ const criaNovoProduto = (imagem, nome, preco, quantidade, id) => {
                 <div class='imagem-container'>
                     <div class='imagem-btn--container'>
                         <input type='image' id='btn-excluir' class='alou' src='../img/VectorExcluir.png'</input>
-                        <input type='image' id='btn-editar' src='../img/VectorEditar.png'</input>
+                        <a class='btn-editar' href='../editar-produto.html?id=${id}' id='btn-editar'><img id='btn-editar--img' src='../img/VectorEditar.png'></a>
                     </div>    
                     <img class='imagem-produto' src='${imagem}'></img>
                 </div>

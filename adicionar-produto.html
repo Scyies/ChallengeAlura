@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/produtos.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/adicionar-produto.css">
+    <link rel="stylesheet" href="css/editar-produto.css">
 </head>
 <body>
     <header class="header">
@@ -45,6 +46,12 @@
                 <label for="form-descricao" class="form-label">Descrição</label>
                 <input type="text" id="form-descricao" required data-descricao>
             </div>
+            <select name="category" id="produto-row" data-type="category" class="form-select" required data-row>
+                <option value selected disabled>Selecione uma categoria: </option>
+                <option value="star-wars">Star Wars</option>
+                <option value="consoles">Consoles</option>
+                <option value="diversos">Diversos</option>
+            </select>
             <input type="submit" value="Adicionar produto" class="botao form-button">
         </form>
     </main>

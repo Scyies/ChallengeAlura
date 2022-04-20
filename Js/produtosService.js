@@ -38,7 +38,7 @@ export const detalhaProduto = (id) => {
     })
 }
 
-const atualizaProduto = (id, nome, preco, imagem, descricao) => {
+const atualizaProduto = (id, nome, preco, imagem, descricao, row) => {
     return fetch(`http://localhost:3000/produtos/${id}`, {
         method: 'PUT',
         headers: {
@@ -48,7 +48,8 @@ const atualizaProduto = (id, nome, preco, imagem, descricao) => {
             nome: nome,
             preco: preco,
             imagem: imagem,
-            descricao: descricao
+            descricao: descricao,
+            row: row
         })
     })
     .then (resposta => {

@@ -13,10 +13,7 @@ searchInput.addEventListener('input', e => {
     produtos.forEach(produto => {
         const isVisible = produto.nome.toLowerCase().includes(value) 
     produto.element.classList.toggle('hide', !isVisible)  //para deixar os que não são buscados invisiveis
-    })
-    // if (!starwars.produto.nome.toLowerCase().includes(value)){
-    //     starwars.classList.toggle('hide');
-    // }
+})
 })
 produtosService.listaProdutos()
 .then(data => {
@@ -29,13 +26,13 @@ produtosService.listaProdutos()
         nome.textContent = produto.nome
         preco.textContent = produto.preco
         imagem.src = produto.imagem
-        if (produto.row == "starwars") {
+        if (produto.row == 1) {
             starwars.append(card);
         }
-        if (produto.row == "console") {
+        if (produto.row == 2) {
             consoles.append(card);
         }
-        if (produto.row == "diversos") {
+        if (produto.row == 3) {
             diversos.append(card);
         }
         return {

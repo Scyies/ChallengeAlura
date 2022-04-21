@@ -6,15 +6,16 @@ const id = pegaURL.searchParams.get('id');
 
 const inputNome = document.querySelector('[data-nome]');
 const inputPreco = document.querySelector('[data-preco]');
-const inputImagem = document.querySelector('[data-imagem]');
+const inputImagem = document.querySelector('.drag-img');
 const inputDescricao = document.querySelector('[data-descricao]');
 const inputRow = document.querySelector('[data-row]');
+console.log(inputImagem)
 
 produtosService.detalhaProduto(id)
 .then (dados => {
     inputNome.value = dados.nome;
     inputPreco.value = dados.preco;
-    inputImagem.value = dados.imagem;
+    inputImagem.src = dados.imagem;
     inputDescricao.value = dados.descricao;
     inputRow.options.selectedIndex = dados.row;
 })

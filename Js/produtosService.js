@@ -5,7 +5,7 @@ const listaProdutos = () => {
     })
 };
 
-const criaProduto = (imagem, nome, preco, descricao) => {
+const criaProduto = (imagem, nome, preco, descricao, row) => {
     return fetch(`http://localhost:3000/produtos`, {
         method: 'POST',
         headers: {
@@ -15,7 +15,8 @@ const criaProduto = (imagem, nome, preco, descricao) => {
             imagem: imagem,
             nome: nome,
             preco: preco,
-            descricao: descricao
+            descricao: descricao,
+            row: row
         })
     })
     .then(resposta => {

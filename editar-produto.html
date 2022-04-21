@@ -30,9 +30,11 @@
         <h2 class="form-titulo">Editar produtos</h2>
         <form class="form" data-form>
             <div class="image-input-container">
-                <input type="text" name="" class="form-image" src="img/image-input.png" required data-imagem>
-                <!-- tenho que mudar isso o input type img só faz com que o botão input seja uma img -->
-
+                <div class="drag-area">
+                    <img src="" alt="" class="drag-img">
+                </div>
+                <label class="escolher-img-label" for="escolher-img">Procure sua imagem</label>
+                <input type="file" id="escolher-img" accept="img/*" name="" class="form-image" src="img/image-input.png" required data-imagem >
             </div>
             <div class="form-div">
                 <label for="form-nome" class="form-label">Nome do produto</label>

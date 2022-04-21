@@ -22,10 +22,12 @@ produtosService.listaProdutos()
         const nome = card.querySelector('.produto-nome');
         const preco = card.querySelector('.produto-preco');
         const imagem = card.querySelector('.imagem-produto');
+        const link = card.querySelector('#verProdutobtn');
 
         nome.textContent = produto.nome
         preco.textContent = produto.preco
         imagem.src = produto.imagem
+        link.href = `./descricao-produto.html?id=${produto.id}`
         if (produto.row == 1) {
             starwars.append(card);
         }

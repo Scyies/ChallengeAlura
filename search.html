@@ -17,36 +17,29 @@
 <body>
     <header class="header">
         <section class="header-logoSearch">
-                <a href="index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
+                <a href="./index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
                 <div class="header-searchBar--container">
-                    <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?" data-search>
-                    <img src="img/lupa png" alt="" class="header-searchBar-lupa">
+                    <input type="search" class="header-searchBar" placeholder="O que deseja encontrar?" data-search>
+                    <button type="submit" class="btn-search" data-btn>
+                        <img src="img/lupa png" alt="" class="header-searchBar-lupa">
+                    </button>
                 </div>
         </section>
         <a href="login.html" class="header-login">Login</a>
     </header>
-<main class="main-todos-produtos">
-    <div class="container-titulo-btn">
-        <h1 class="titulo">Todos os produtos</h1>
-        <a href="./adicionar-produto.html" class="adicionar-btn botao">Adicionar produto</a>
-    </div>
-    <section class="produtos">
-        <template data-template>
-            <div class="produto">
-                <div class="imagem-container">
-                    <div class="imagem-btn--container">
-                        <input type="image" class="btn-excluir" id="btn-excluir" src='../img/VectorExcluir.png'>
-                        <a class='btn-editar' href='../editar-produto.html?id=${id}' id='btn-editar'><img id='btn-editar--img' src='../img/VectorEditar.png'></a>
-                    </div>
-                    <img class='imagem-produto' src=></img>
+    <main>
+        <h2 class="produtos-titulo">Resultados da busca</h2>
+        <section class="produtos" data-resultado>
+            <template data-template>
+                <div class="produto">
+                    <img src="" alt="" class="imagem-produto">
+                    <p class="produto-nome"></p>
+                    <p class="produto-preco"></p>
+                    <button id="verProdutobtn" class="produto-verProduto--link produto-verProduto">Ver produto</button>
                 </div>
-                <p class='produto-nome'></p>
-                <p class='produto-preco'></p>
-                <p class='produto-nome'></p>
-            </div>
-        </template>
-    </section>
-</main>
+            </template>
+        </section>
+    </main>
     <footer class="footer">
         <div class="footer-container">
             <section class="footer-logo">
@@ -67,7 +60,7 @@
                     <input id="footer-nome--faleConosco">
                 </div>
                 <textarea class="footer-mensagem--faleConosco" placeholder="Escreva sua mensagem"></textarea>
-                <button class="footer-btn--faleConosco">Enviar mensagem</button>
+                <button onclick="adminLogin()" class="footer-btn--faleConosco">Enviar mensagem</button>
             </section>
         </div>
     </footer>
@@ -75,7 +68,5 @@
         <label>Desenvolvido por Sério Valério</label>
         <label>2022</label>
     </div>
-    <script type="module" src="./Js/todosProdutos-controller.js"></script>
-    <!-- <script type="module" src="./Js/atualizaProduto-controller.js"></script> -->
+    <script type="module" src="./Js/search-controller.js"></script>
 </body>
-</html>

@@ -28,23 +28,24 @@
     </header>
 <main>
     <section class="descricao">
-        <img src="img/produto-descricao.jpg" alt="" class="descricao-imagem">
-        <div class="descricao-descricao">
-            <h2 class="descricao-titulo tituloDescricao">Produto XYZ</h2>
-            <p class="produto-preco precoProduto">R$ 60,00</p>
-            <p class="produto-nome">I am the bone of my sword
-                Steel is my body and fire is my blood
-                I have created over a thousand blades
-                Unknown to death
-                Nor known to life
-                Have withstood pain to create many weapons
-                Yet those hands shall never hold anything
-                So, as I pray, Unlimited Blade Works</p>
-        </div>
+            <img src="" alt="" class="descricao-imagem" data-descricaoImagem>
+            <div class="descricao-descricao">
+                <h2 class="descricao-titulo tituloDescricao" data-descricaoNome></h2>
+                <p class="produto-preco precoProduto" data-descricaoPreco></p>
+                <p class="produto-nome" data-descricao></p>
+            </div>
     </section>
     <section class="produtos-container">
         <h2 class="produtos-titulo">Produtos similares</h2>
         <div class="produtos"></div>
+            <template data-form>
+                <div class="produto">
+                    <img src="" alt="" class="imagem-produto" data-imagem>
+                    <p class="produto-nome" data-nome></p>
+                    <p class="produto-preco" data-preco></p>
+                    <a href="#" id='verProdutobtn' class='produto-verProduto--link produto-verProduto' data-detalha>Ver produto</a>
+                </div>
+            </template>
     </section>
 </main>
     <footer class="footer">
@@ -75,7 +76,8 @@
         <label>Desenvolvido por Sério Valério</label>
         <label>2022</label>
     </div>
-    <script type="module" src="js/listaProdutos-controller.js"></script>
-    <script src="js/verProduto.js"></script>
+    <!-- <script type="module" src="js/listaProdutos-controller.js"></script> -->
+    <script type="module" src="js/descriçãoProduto.js"></script>
+    <script type="module" src="js/descreveProduto.js"></script>
 </body>
 </html>

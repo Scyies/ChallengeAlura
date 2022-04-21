@@ -17,3 +17,8 @@
 .produtos-titulo {
     margin-bottom: 1rem;
 }
+
+.descricao-imagem {
+    height: 406px;
+    width: 50%;
+}

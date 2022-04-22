@@ -63,7 +63,16 @@
     width: 65%;
 }
 
+.drag-img {
+    /* display: none; */
+}
+
 .drag-preview {
     width: 80%;
     height: 150px;
+    /* display: none; */
+}
+
+.preview {
+    display: block;
 }

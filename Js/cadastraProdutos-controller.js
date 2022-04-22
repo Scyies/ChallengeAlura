@@ -7,7 +7,7 @@ formulario.addEventListener('submit', (evento) => {
     const nome = evento.target.querySelector('[data-nome]').value
     const preco = evento.target.querySelector('[data-preco]').value
     const descricao = evento.target.querySelector('[data-descricao]').value
-    const imagem = evento.target.querySelector('[data-imagem]').value
+    const imagem = evento.target.querySelector('#drag-preview').src
     const row = evento.target.querySelector('[data-row]').options.selectedIndex
 
     produtosService.criaProduto(imagem, nome, preco, descricao, row)
@@ -18,17 +18,19 @@ formulario.addEventListener('submit', (evento) => {
 
 const imgInput = document.querySelector('#escolher-img');
 const previewContainer = document.querySelector('.drag-area');
-const imgUpload = previewContainer.querySelector('.drag-preview');
+const imgUpload = previewContainer.querySelector('#drag-preview');
 const imgPreviewDefault = previewContainer.querySelector('.drag-img');
+console.log(imgUpload);
+console.log(imgPreviewDefault);
 
 imgInput.addEventListener('change', function () {
     const file = this.files[0];
-    
+
     if (file) {
         const reader = new FileReader();
 
-        imgPreviewDefault.style.display = 'none';
-        imgInput.style.display = 'block';
+        imgInput.style.display = 'block'
+        imgPreviewDefault.style.display = 'none'
 
         reader.addEventListener('load', function () {
             imgUpload.setAttribute('src', this.result);

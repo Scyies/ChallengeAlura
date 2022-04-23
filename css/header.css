@@ -23,6 +23,10 @@
     border-radius: 20px;
 }
 
+.header-searchBar--container:hover {
+    border: 2px solid #2a7ae4;
+}
+
 .header-searchBar {
     border: none;
     background-color: #f5f5f5;
@@ -48,4 +52,10 @@
     font-weight: 400;
     text-decoration: none;
     padding: 16px 70px;
+    transition: .5s;
+}
+
+.header-login:hover {
+    color: white;
+    background-color: #2a7ae4;
 }

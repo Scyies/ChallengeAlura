@@ -30,3 +30,11 @@
     font-size: 22px;
     margin-bottom: 32px;
 }
+
+.banner-botao {
+    transition: .5s;
+}
+
+.banner-botao:hover {
+    background-color: #5f9be9;
+}

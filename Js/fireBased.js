@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+import { getDatabase, ref, set, onValue, get, child } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -19,4 +19,67 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+function writeUserData(id, nome, preco, descricao, imagem) {
+    const db = getDatabase();
+    set(ref(db, 'produtos/' + id), {
+      nome: nome,
+      preco: preco,
+      descricao: descricao,
+      imagem: imagem
+    })
+    alert('noice')
+}
+
+// window.onload = writeUserData(35, "pinto de borracha", "R$ 20,00", "SIM", "http://pm1.narvii.com/6927/6d72e0af01f1e56e449b1f7966e4a807693f0341r1-1200-1649v2_00.jpg");
+
+let produtos = [];
+const produtosTemplate = document.querySelector('[data-template]');
+const starwars = document.querySelector('.produtos-primeiraRow');
+const consoles = document.querySelector('.produtos-segundaRow');
+const diversos = document.querySelector('.produtos-terceiraRow');
+
+const db = getDatabase();
+const dbRef = ref(db, `produtos`);
+onValue(dbRef, (snapshot) => {
+  const data = snapshot.val()
+  console.log(data)
+    produtos = data.map(produto => {
+        const card = produtosTemplate.content.cloneNode(true).children[0];
+        const nome = card.querySelector('.produto-nome');
+        const preco = card.querySelector('.produto-preco');
+        const imagem = card.querySelector('.imagem-produto');
+        const link = card.querySelector('#verProdutobtn');
+
+        nome.textContent = produto.nome
+        preco.textContent = produto.preco
+        imagem.src = produto.imagem
+        link.href = `./descricao-produto.html?id=${produto.id}`
+        if (produto.row == 1) {
+            starwars.append(card);
+        }
+        if (produto.row == 2) {
+            consoles.append(card);
+        }
+        if (produto.row == 3) {
+            diversos.append(card);
+        }
+        return {
+            nome: produto.nome, preco: produto.preco, imagem: produto.imagem, element: card
+        }
+    })
+})
+
+
+console.log(dbRef);
+
+// const dbRefer = ref(getDatabase());
+// get(child(dbRefer, `produtos/0`)).then((snapshot) => {
+//   if (snapshot.exists()) {
+//     console.log(snapshot.val());
+//   } else {
+//     console.log("No data available");
+//   }
+// }).catch((error) => {
+//   console.error(error);
+// });

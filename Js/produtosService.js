@@ -1,15 +1,13 @@
-const listaProdutos = () => {
-    return fetch(`http://localhost:3000/produtos`)
-    .then (resposta => {
-        return resposta.json()
-    })
+const listaProdutos = async () => {
+    const resposta = await fetch(`http://localhost:3000/produtos`);
+    return await resposta.json();
 };
 
-const criaProduto = (imagem, nome, preco, descricao, row) => {
-    return fetch(`http://localhost:3000/produtos`, {
+const criaProduto = async (imagem, nome, preco, descricao, row) => {
+    const resposta = await fetch(`http://localhost:3000/produtos`, {
         method: 'POST',
         headers: {
-            'Content-Type' : 'application/json'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
             imagem: imagem,
@@ -18,10 +16,8 @@ const criaProduto = (imagem, nome, preco, descricao, row) => {
             descricao: descricao,
             row: row
         })
-    })
-    .then(resposta => {
-        return resposta.body
     });
+    return resposta.body;
 }
 
 const removeProduto = (id) => {
@@ -32,18 +28,16 @@ const removeProduto = (id) => {
 
 
 //funções para atualizar o produto editado
-export const detalhaProduto = (id) => {
-    return fetch(`http://localhost:3000/produtos/${id}`)
-    .then(resposta => {
-        return resposta.json();
-    })
+export const detalhaProduto = async (id) => {
+    const resposta = await fetch(`http://localhost:3000/produtos/${id}`);
+    return await resposta.json();
 }
 
-const atualizaProduto = (id, nome, preco, imagem, descricao, row) => {
-    return fetch(`http://localhost:3000/produtos/${id}`, {
+const atualizaProduto = async (id, nome, preco, imagem, descricao, row) => {
+    const resposta = await fetch(`http://localhost:3000/produtos/${id}`, {
         method: 'PUT',
         headers: {
-            'Content-type' : 'application/json'
+            'Content-type': 'application/json'
         },
         body: JSON.stringify({
             nome: nome,
@@ -52,10 +46,8 @@ const atualizaProduto = (id, nome, preco, imagem, descricao, row) => {
             descricao: descricao,
             row: row
         })
-    })
-    .then (resposta => {
-        return resposta.json()
-    })
+    });
+    return await resposta.json();
 }
 
 export const produtosService = {

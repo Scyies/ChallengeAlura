@@ -5,46 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek - Login</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/produtos.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/todos-produtos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/todos-produtos.css">
+    <link rel="stylesheet" href="../css/descricao-produto.css">
 </head>
 <body>
     <header class="header">
         <section class="header-logoSearch">
                 <a href="index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
                 <div class="header-searchBar--container">
-                    <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?" data-search>
-                    <img src="img/lupa png" alt="" class="header-searchBar-lupa">
+                    <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?">
+                    <img src="../img/lupa png" alt="" class="header-searchBar-lupa">
                 </div>
         </section>
         <a href="login.html" class="header-login">Login</a>
     </header>
-<main class="main-todos-produtos">
-    <div class="container-titulo-btn">
-        <h1 class="titulo">Todos os produtos</h1>
-        <a href="./adicionar-produto.html" class="adicionar-btn botao">Adicionar produto</a>
-    </div>
-    <section class="produtos">
-        <template data-template>
-            <div class="produto">
-                <div class="imagem-container">
-                    <div class="imagem-btn--container">
-                        <input type="image" class="btn-excluir" id="btn-excluir" src='../img/VectorExcluir.png'>
-                        <a class='btn-editar' href='../editar-produto.html?id=${id}' id='btn-editar'><img id='btn-editar--img' src='../img/VectorEditar.png'></a>
-                    </div>
-                    <img class='imagem-produto' src=></img>
-                </div>
-                <p class='produto-nome'></p>
-                <p class='produto-preco'></p>
-                <p class='produto-nome'></p>
+<main>
+    <section class="descricao">
+            <img src="" alt="" class="descricao-imagem" data-descricaoImagem>
+            <div class="descricao-descricao">
+                <h2 class="descricao-titulo tituloDescricao" data-descricaoNome></h2>
+                <p class="produto-preco precoProduto" data-descricaoPreco></p>
+                <p class="produto-nome" data-descricao></p>
             </div>
-        </template>
+    </section>
+    <section class="produtos-container">
+        <h2 class="produtos-titulo">Outros produtos</h2>
+        <div class="produtos"></div>
+            <template data-form>
+                <div class="produto">
+                    <img src="" alt="" class="imagem-produto" data-imagem>
+                    <p class="produto-nome" data-nome></p>
+                    <p class="produto-preco" data-preco></p>
+                    <a href="#" id='verProdutobtn' class='produto-verProduto--link produto-verProduto' data-detalha>Ver produto</a>
+                </div>
+            </template>
     </section>
 </main>
     <footer class="footer">
@@ -75,7 +76,8 @@
         <label>Desenvolvido por Sério Valério</label>
         <label>2022</label>
     </div>
-    <script type="module" src="./Js/todosProdutos-controller.js"></script>
-    <!-- <script type="module" src="./Js/atualizaProduto-controller.js"></script> -->
+    <!-- <script type="module" src="js/listaProdutos-controller.js"></script> -->
+    <script type="module" src="../js/descriçãoProduto.js"></script>
+    <script type="module" src="../js/descreveProduto.js"></script>
 </body>
 </html>

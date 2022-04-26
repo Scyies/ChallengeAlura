@@ -1,0 +1,115 @@
+.footer {
+    background-color: #EAF2FD;
+    height: 368px;
+}
+
+.footer-container {
+    padding: 64px 156px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+/* .footer-logo {
+
+} */
+
+.footer-escritas {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-escritas--escrita {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    color: #464646;
+    flex-grow: 1;
+}
+
+.footer-faleConosco {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-faleConosco--titulo {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: 8px;
+    color: #464646;
+}
+
+.footer-inputNome--container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    /* height: 56px; */
+    width: 350px;
+}
+
+.footer-nome--faleConosco {
+    font-size: 12px;
+    color: #a2a2a2;
+    font-weight: 400;
+    padding: 4px;
+    background-color: white;
+    border-radius: 4px 4px 0 0;
+}
+
+#footer-nome--faleConosco {
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 0 0 4px 4px;
+    padding: 4px;
+}
+
+.footer-mensagem--faleConosco {
+    border: none;
+    outline: none;
+    height: 82px;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+.footer-mensagem--faleConosco::placeholder {
+    font-family: 'Raleway', sans-serif;
+    color: #A2A2A2;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-btn--faleConosco {
+    color: white;
+    background-color: #2a7ae4;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #2a7ae4;
+    padding: 16px;
+    margin-top: 24px;
+    width: 165px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.footer-btn--faleConosco:hover {
+    background-color: #5f9be9;
+}
+
+.rodape-contato {
+    display: flex;
+    flex-direction: column;
+    height: 102px;
+    text-align: center;
+    justify-content: center;
+}
+
+.rodape-contato label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #464646;
+}

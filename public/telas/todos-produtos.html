@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - Login</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/todos-produtos.css">
+</head>
+<body>
+    <header class="header">
+        <section class="header-logoSearch">
+                <a href="index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
+                <div class="header-searchBar--container">
+                    <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?" data-search>
+                    <img src="../img/lupa png" alt="" class="header-searchBar-lupa">
+                </div>
+        </section>
+        <a href="login.html" class="header-login">Login</a>
+    </header>
+<main class="main-todos-produtos">
+    <div class="container-titulo-btn">
+        <h1 class="titulo">Todos os produtos</h1>
+        <a href="./adicionar-produto.html" class="adicionar-btn botao">Adicionar produto</a>
+    </div>
+    <section class="produtos">
+        <template data-template>
+            <div class="produto">
+                <div class="imagem-container">
+                    <div class="imagem-btn--container">
+                        <input type="image" class="btn-excluir" id="btn-excluir" src='../img/VectorExcluir.png'>
+                        <a class='btn-editar' href='../editar-produto.html?id=${id}' id='btn-editar'><img id='btn-editar--img' src='../img/VectorEditar.png'></a>
+                    </div>
+                    <img class='imagem-produto' src=></img>
+                </div>
+                <p class='produto-nome'></p>
+                <p class='produto-preco'></p>
+                <p class='produto-nome'></p>
+            </div>
+        </template>
+    </section>
+</main>
+    <footer class="footer">
+        <div class="footer-container">
+            <section class="footer-logo">
+                <img src= "https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" class="footer-logo--img">
+            </section>
+            <ul class="footer-escritas">
+                <li class="footer-escritas--escrita">Quem somos nós</li>
+                <li class="footer-escritas--escrita">Política de privacidade</p>
+                <li class="footer-escritas--escrita">Programa fidelidade</li>
+                <li class="footer-escritas--escrita">Nossas lojas</li>
+                <li class="footer-escritas--escrita">Quero ser franqueado</p>
+                <li class="footer-escritas--escrita">Anuncie aqui</p>
+            </ul>
+            <section class="footer-faleConosco">
+                <p class="footer-faleConosco--titulo">Fale Conosco</p>
+                <div class="footer-inputNome--container">
+                    <label for="footer-nome--faleConosco" class="footer-nome--faleConosco">Nome</label>
+                    <input id="footer-nome--faleConosco">
+                </div>
+                <textarea class="footer-mensagem--faleConosco" placeholder="Escreva sua mensagem"></textarea>
+                <button class="footer-btn--faleConosco">Enviar mensagem</button>
+            </section>
+        </div>
+    </footer>
+    <div class="rodape-contato">
+        <label>Desenvolvido por Sério Valério</label>
+        <label>2022</label>
+    </div>
+    <script type="module" src="../Js/todosProdutos-controller.js"></script>
+    <!-- <script type="module" src="./Js/atualizaProduto-controller.js"></script> -->
+</body>
+</html>

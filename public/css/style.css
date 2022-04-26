@@ -1,0 +1,22 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    background-color: #E5E5E5;
+}
+
+.botao {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 48px;
+    background-color: #2A7AE4;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}

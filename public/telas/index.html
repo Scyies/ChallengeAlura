@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - Home</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <section class="header-logoSearch">
+                <a href="#" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
+                <div class="header-searchBar--container">
+                    <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?" data-search>
+                    <img src="../img/lupa png" alt="" class="header-searchBar-lupa">
+                </div>
+        </section>
+        <a href="login.html" class="header-login">Login</a>
+    </header>
+    <figure class="banner">
+        <img class="banner-img" src="https://trello.com/1/cards/620bf3f8bf76ff71199adc86/attachments/620bf3f9bf76ff71199ade5c/download/banner-image.png" alt="">
+        <figcaption class="banner-escritas">
+            <h2 class="banner-titulo">Dezembro Promocional</h2>
+            <p class="banner-promocao">Produtos selecionados com 33% de desconto</p>
+            <a href="#consoles" class="banner-botao botao">Ver Consoles</a>
+        </figcaption>
+    </figure>
+    <main>
+        <section class="produtos-container">
+            <div class="produtos-titulo--container">
+                <h2 class="produtos-titulo">Star Wars</h2>
+                <a href="#" class="produtos-titulo--vertudoContainer">
+                    <p class="produtos-titulo-vertudo">Ver tudo</p>
+                    <img src="../img/setavetor.png" alt="" class="produtos-titulo-vertudoseta">
+                </a>
+            </div>
+            
+            <ul class="produtos-primeiraRow">
+
+            </ul>
+            <div class="produtos-titulo--container">
+                <h2 class="produtos-titulo" id="consoles">Consoles</h2>
+                <a href="#" class="produtos-titulo--vertudoContainer">
+                    <p class="produtos-titulo-vertudo">Ver tudo</p>
+                    <img src="../img/setavetor.png" alt="" class="produtos-titulo-vertudoseta">
+                </a>
+            </div>
+            <ul class="produtos-segundaRow">
+
+            </ul>
+            <div class="produtos-titulo--container">
+                <h2 class="produtos-titulo">Diversos</h2>
+                <a href="#" class="produtos-titulo--vertudoContainer">
+                    <p class="produtos-titulo-vertudo">Ver tudo</p>
+                    <img src="../img/setavetor.png" alt="" class="produtos-titulo-vertudoseta">
+                </a>
+            </div>
+            <ul class="produtos-terceiraRow">
+
+            </ul>
+            <template data-template>
+                <div class="produto">
+                    <img src="" alt="" class="imagem-produto">
+                    <p class="produto-nome"></p>
+                    <p class="produto-preco"></p>
+                    <a href="#" id="verProdutobtn" class="produto-verProduto--link produto-verProduto">Ver produto</a>
+                </div>
+            </template>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <section class="footer-logo">
+                <img src= "https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" class="footer-logo--img">
+            </section>
+            <ul class="footer-escritas">
+                <li class="footer-escritas--escrita">Quem somos nós</li>
+                <li class="footer-escritas--escrita">Política de privacidade</p>
+                <li class="footer-escritas--escrita">Programa fidelidade</li>
+                <li class="footer-escritas--escrita">Nossas lojas</li>
+                <li class="footer-escritas--escrita">Quero ser franqueado</p>
+                <li class="footer-escritas--escrita">Anuncie aqui</p>
+            </ul>
+            <section class="footer-faleConosco">
+                <p class="footer-faleConosco--titulo">Fale Conosco</p>
+                <div class="footer-inputNome--container">
+                    <label for="footer-nome--faleConosco" class="footer-nome--faleConosco">Nome</label>
+                    <input id="footer-nome--faleConosco">
+                </div>
+                <textarea class="footer-mensagem--faleConosco" placeholder="Escreva sua mensagem"></textarea>
+                <button class="footer-btn--faleConosco">Enviar mensagem</button>
+            </section>
+        </div>
+    </footer>
+    <div class="rodape-contato">
+        <label>Desenvolvido por Sério Valério</label>
+        <label>2022</label>
+    </div>
+    <script type="module" src="../js/controllerProdutos-home.js"></script>
+    <!-- <script type="module" src="js/fireBased.js"></script> -->
+</body>
+</html>

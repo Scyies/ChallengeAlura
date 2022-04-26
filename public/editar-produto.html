@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek - Adicionar produto</title>
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="/css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/banner.css">
-    <link rel="stylesheet" href="../css/produtos.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/adicionar-produto.css">
-    <link rel="stylesheet" href="../css/editar-produto.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/produtos.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/adicionar-produto.css">
+    <link rel="stylesheet" href="/css/editar-produto.css">
 </head>
 <body>
     <header class="header">
@@ -21,21 +21,20 @@
                 <a href="./index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
                 <div class="header-searchBar--container">
                     <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?">
-                    <img src="../img/lupa png" alt="" class="header-searchBar-lupa">
+                    <img src="/img/lupa png" alt="" class="header-searchBar-lupa">
                 </div>
         </section>
         <a href="login.html" class="header-login">Login</a>
     </header>
     <main class="main-form">
-        <h2 class="form-titulo">Adicionar novo produto</h2>
+        <h2 class="form-titulo">Editar produtos</h2>
         <form class="form" data-form>
             <div class="image-input-container">
                 <div class="drag-area">
-                    <img src="../img/image-input.png" alt="" class="drag-img">
                     <img src="" alt="" class="drag-preview" id="drag-preview">
                 </div>
                 <label class="escolher-img-label" for="escolher-img">Procure sua imagem</label>
-                <input type="file" id="escolher-img" accept="img/*" name="" class="form-image" required data-imagem >
+                <input type="file" id="escolher-img" accept="img/*" name="" class="form-image" data-imagem >
             </div>
             <div class="form-div">
                 <label for="form-nome" class="form-label">Nome do produto</label>
@@ -55,7 +54,7 @@
                 <option value="consoles">Consoles</option>
                 <option value="diversos">Diversos</option>
             </select>
-            <input type="submit" value="Adicionar produto" class="botao form-button">
+            <input type="submit" value="Editar produto" class="botao form-button">
         </form>
     </main>
     <footer class="footer">
@@ -86,6 +85,6 @@
         <label>Desenvolvido por Sério Valério</label>
         <label>2022</label>
     </div>
-    <script type="module" src="../Js/cadastraProdutos-controller.js"></script>
+    <script type="module" src="/JS/atualizaProduto-controller.js"></script>
 </body>
 </html>

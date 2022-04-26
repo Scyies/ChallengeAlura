@@ -5,38 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek - Login</title>
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="/css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/produtos.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/produtos.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/todos-produtos.css">
+    <link rel="stylesheet" href="/css/descricao-produto.css">
 </head>
 <body>
     <header class="header">
         <section class="header-logoSearch">
-                <a href="./index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
+                <a href="index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
                 <div class="header-searchBar--container">
                     <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?">
-                    <img src="../img/lupa png" alt="" class="header-searchBar-lupa">
+                    <img src="/img/lupa png" alt="" class="header-searchBar-lupa">
                 </div>
         </section>
         <a href="login.html" class="header-login">Login</a>
     </header>
-<main class="login">
-    <h1 class="login-titulo">Iniciar Sessão</h1>
-    <form class="login-form">
-        <div class="login-email--container">
-            <label for="login-email">Escreva seu login</label>
-            <input type="text" id="login-email" class="input" placeholder="Escreva seu login">
-        </div>
-        <div class="login-senha--container">
-            <label for="login-senha">Escreva sua senha</label>
-            <input type="password" id="login-senha" class="input" placeholder="Escreva sua senha">
-        </div>
-        <button type="submit" class="login-entrar botao">Entrar</button>
-    </form>
+<main>
+    <section class="descricao">
+            <img src="" alt="" class="descricao-imagem" data-descricaoImagem>
+            <div class="descricao-descricao">
+                <h2 class="descricao-titulo tituloDescricao" data-descricaoNome></h2>
+                <p class="produto-preco precoProduto" data-descricaoPreco></p>
+                <p class="produto-nome" data-descricao></p>
+            </div>
+    </section>
+    <section class="produtos-container">
+        <h2 class="produtos-titulo">Outros produtos</h2>
+        <div class="produtos"></div>
+            <template data-form>
+                <div class="produto">
+                    <img src="" alt="" class="imagem-produto" data-imagem>
+                    <p class="produto-nome" data-nome></p>
+                    <p class="produto-preco" data-preco></p>
+                    <a href="#" id='verProdutobtn' class='produto-verProduto--link produto-verProduto' data-detalha>Ver produto</a>
+                </div>
+            </template>
+    </section>
 </main>
     <footer class="footer">
         <div class="footer-container">
@@ -66,5 +76,7 @@
         <label>Desenvolvido por Sério Valério</label>
         <label>2022</label>
     </div>
-    <script type="module" src="../Js/Login/login.js"></script>
+    <script type="module" src="/JS/descriçãoProduto.js"></script>
+    <script type="module" src="/JS/descreveProduto.js"></script>
 </body>
+</html>

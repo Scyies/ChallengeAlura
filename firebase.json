@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "telas",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",

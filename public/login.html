@@ -12,40 +12,31 @@
     <link rel="stylesheet" href="/css/produtos.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" href="/css/todos-produtos.css">
 </head>
 <body>
     <header class="header">
         <section class="header-logoSearch">
-                <a href="index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
+                <a href="./index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
                 <div class="header-searchBar--container">
-                    <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?" data-search>
+                    <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?">
                     <img src="/img/lupa png" alt="" class="header-searchBar-lupa">
                 </div>
         </section>
         <a href="login.html" class="header-login">Login</a>
     </header>
-<main class="main-todos-produtos">
-    <div class="container-titulo-btn">
-        <h1 class="titulo">Todos os produtos</h1>
-        <a href="./adicionar-produto.html" class="adicionar-btn botao">Adicionar produto</a>
-    </div>
-    <section class="produtos">
-        <template data-template>
-            <div class="produto">
-                <div class="imagem-container">
-                    <div class="imagem-btn--container">
-                        <input type="image" class="btn-excluir" id="btn-excluir" src='/img/VectorExcluir.png'>
-                        <a class='btn-editar' href='/editar-produto.html?id=${id}' id='btn-editar'><img id='btn-editar--img' src='/img/VectorEditar.png'></a>
-                    </div>
-                    <img class='imagem-produto' src=></img>
-                </div>
-                <p class='produto-nome'></p>
-                <p class='produto-preco'></p>
-                <p class='produto-nome'></p>
-            </div>
-        </template>
-    </section>
+<main class="login">
+    <h1 class="login-titulo">Iniciar Sessão</h1>
+    <form class="login-form">
+        <div class="login-email--container">
+            <label for="login-email">Escreva seu login</label>
+            <input type="text" id="login-email" class="input" placeholder="Escreva seu login">
+        </div>
+        <div class="login-senha--container">
+            <label for="login-senha">Escreva sua senha</label>
+            <input type="password" id="login-senha" class="input" placeholder="Escreva sua senha">
+        </div>
+        <button type="submit" class="login-entrar botao">Entrar</button>
+    </form>
 </main>
     <footer class="footer">
         <div class="footer-container">
@@ -75,7 +66,5 @@
         <label>Desenvolvido por Sério Valério</label>
         <label>2022</label>
     </div>
-    <script type="module" src="/Js/todosProdutos-controller.js"></script>
-    <!-- <script type="module" src="./Js/atualizaProduto-controller.js"></script> -->
+    <script type="module" src="/JS/Login/login.js"></script>
 </body>
-</html>

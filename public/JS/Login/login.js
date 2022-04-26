@@ -18,7 +18,7 @@ class Login {
                 }
             });
             if (error == 0) {
-                window.location.href = '../../telas/todos-produtos.html'
+                window.location.href = '../../todos-produtos.html'
             }
         });
     }

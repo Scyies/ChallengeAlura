@@ -29,7 +29,7 @@ searchInput.addEventListener('input', e => {
 })
 
 
-// const db = getDatabase();
+const db = getDatabase();
 // const dbRef = ref(db, `produtos`);
 // onValue(dbRef, (snapshot) => {
 //   const data = snapshot.val()

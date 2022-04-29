@@ -68,3 +68,8 @@
     max-width: 280px;
     display: none;
 }
+
+.drag-preview-adicionar {
+    max-height: 150px;
+    max-width: 280px;
+}

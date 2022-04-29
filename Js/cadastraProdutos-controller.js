@@ -1,4 +1,3 @@
-import { produtosService } from "./produtosService.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import { getDatabase, ref, set, onValue, get, child, push, update } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
 

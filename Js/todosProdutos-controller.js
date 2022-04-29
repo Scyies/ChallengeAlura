@@ -1,4 +1,3 @@
-import { produtosService } from "./produtosService.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import { getDatabase, ref, set, onValue, get, child, remove } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
 
@@ -30,33 +29,6 @@ searchInput.addEventListener('input', e => {
 
 
 const db = getDatabase();
-// const dbRef = ref(db, `produtos`);
-// onValue(dbRef, (snapshot) => {
-//   const data = snapshot.val()
-//     produtos = data.map(produto => {
-//         const linhaProdutoNovo = document.createElement('div');
-//         linhaProdutoNovo.classList.add("produto");
-//         const card = `
-//                  <div class='imagem-container'>
-//                      <div class='imagem-btn--container'>
-//                          <input type='image' id='btn-excluir' class='btn-excluir' src='../img/VectorExcluir.png'</input>
-//                          <a class='btn-editar' href='../editar-produto.html?id=${produto.id}' id='btn-editar'><img id='btn-editar--img' src='../img/VectorEditar.png'></a>
-//                      </div>    
-//                      <img class='imagem-produto' src='${produto.imagem}'></img>
-//                  </div>
-//                  <p class='produto-nome'>${produto.nome}</p>
-//                  <p class='produto-preco'>${produto.preco}</p>
-//                  <p class='produto-nome' id='produto-id' data-id>${produto.id}</p>
-//                 `;
-//         linhaProdutoNovo.innerHTML = card;
-//         linhaProdutoNovo.dataset.id = produto.id;
-//         repositorio.append(linhaProdutoNovo);
-//         return {
-//             linhaProdutoNovo
-//         }
-//     })
-// })
-
 const dbRef = ref(getDatabase());
 get(child(dbRef, 'produtos/'))
 .then((snapshot) => {

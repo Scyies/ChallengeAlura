@@ -10,7 +10,6 @@ const inputPreco = document.querySelector('[data-preco]');
 const inputImagem = document.querySelector('#drag-preview');
 const inputDescricao = document.querySelector('[data-descricao]');
 const inputRow = document.querySelector('[data-row]');
-// console.log(inputImagem)
 
 const firebaseConfig = {
     apiKey: "AIzaSyBYxucnxHmgCX4fPPDL1JFhCnXqVcSG4Cg",
@@ -35,6 +34,7 @@ get(child(dbRef, `produtos/${id}`))
         inputImagem.src = snapshot.val().imagem;
         inputDescricao.value = snapshot.val().descricao;
         inputRow.options.selectedIndex = snapshot.val().row;
+        console.log(inputImagem)
     }
     else {
         console.log("No data");
@@ -43,6 +43,8 @@ get(child(dbRef, `produtos/${id}`))
 .catch ((error) => {
     console.error(error);
 });
+
+
 
 const formulario = document.querySelector('[data-form]');
 
@@ -61,11 +63,8 @@ formulario.addEventListener('submit', (e) => {
             id: id
         };
 
-        // const newProdutoKey = push(child(ref(db), 'produtos')).key; cria nova key aleatória
-
         const atualizacao = {};
         
-        // atualizacao['produtos/'] = produtoData;
         atualizacao['produtos/' + id + '/'] = produtoData
         console.log(atualizacao)
         return update(ref(db), atualizacao);

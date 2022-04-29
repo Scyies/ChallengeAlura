@@ -9,9 +9,9 @@ main {
 .botao {
     text-decoration: none;
     color: white;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
     background-color: #2A7AE4;
-    padding: 16px;
+    padding: 1rem;
     border: none;
     cursor: pointer;
 }

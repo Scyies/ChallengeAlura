@@ -1,6 +1,6 @@
 .banner {
     width: 100%;
-    height: 352px;
+    height: 22rem;
     display: flex;
 }
 
@@ -13,22 +13,21 @@
     box-sizing: border-box;
     color: white;
     position: absolute;
-    height: 352px;
-    margin-left: 152px;
-    width: 100%;
+    height: 22rem;
+    margin-left: 9.5rem;
 }
 
 .banner-titulo {
     font-weight: 700;
     font-size: 52px;
-    margin-top: 150px;
-    margin-bottom: 16px;
+    margin-top: 9.5rem;
+    margin-bottom: 1rem;
 }
 
 .banner-promocao {
     font-weight: 700;
     font-size: 22px;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .banner-botao {

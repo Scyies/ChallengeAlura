@@ -4,49 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek - Login</title>
+    <title>AluraGeek - Adicionar produto</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/banner.css">
     <link rel="stylesheet" href="/css/produtos.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" href="/css/todos-produtos.css">
+    <link rel="stylesheet" href="/css/adicionar-produto.css">
+    <link rel="stylesheet" href="/css/editar-produto.css">
 </head>
 <body>
     <header class="header">
         <section class="header-logoSearch">
-                <a href="index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
+                <a href="./index.html" class="header-logo--link"><img src="https://trello.com/1/cards/620bf3f8bf76ff71199adca0/attachments/620bf3f9bf76ff71199adec3/download/Logo.png" alt="Logo da Alura Geek" class="header-logo--img"></a>
                 <div class="header-searchBar--container">
-                    <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?" data-search>
+                    <input type="text" class="header-searchBar" placeholder="O que deseja encontrar?">
                     <img src="/img/lupa png" alt="" class="header-searchBar-lupa">
                 </div>
         </section>
         <a href="login.html" class="header-login">Login</a>
     </header>
-<main class="main-todos-produtos">
-    <div class="container-titulo-btn">
-        <h1 class="titulo">Todos os produtos</h1>
-        <a href="./adicionar-produto.html" class="adicionar-btn botao">Adicionar produto</a>
-    </div>
-    <section class="produtos">
-        <template data-template>
-            <div class="produto">
-                <div class="imagem-container">
-                    <div class="imagem-btn--container">
-                        <input type="image" class="btn-excluir" id="btn-excluir" src='/img/VectorExcluir.png'>
-                        <a class='btn-editar' href='/editar-produto.html?id=${id}' id='btn-editar'><img id='btn-editar--img' src='/img/VectorEditar.png'></a>
-                    </div>
-                    <img class='imagem-produto' src=></img>
+    <main class="main-form">
+        <h2 class="form-titulo">Adicionar novo produto</h2>
+        <form class="form" data-form>
+            <div class="image-input-container">
+                <div class="drag-area">
+                    <img src="/img/image-input.png" alt="" class="drag-img">
+                    <img src="" alt="" class="drag-preview" id="drag-preview">
                 </div>
-                <p class='produto-nome'></p>
-                <p class='produto-preco'></p>
-                <p class='produto-nome'></p>
+                <label class="escolher-img-label" for="escolher-img">Procure sua imagem</label>
+                <input type="file" id="escolher-img" accept="img/*" name="" class="form-image" required data-imagem >
             </div>
-        </template>
-    </section>
-</main>
+            <div class="form-div">
+                <label for="form-nome" class="form-label">Nome do produto</label>
+                <input type="text" id="form-nome" required data-nome>
+            </div>
+            <div class="form-div">
+                <label for="form-preco" class="form-label">Preço do produto</label>
+                <input type="text" id="form-preco" required data-preco>
+            </div>
+            <div class="form-div">
+                <label for="form-descricao" class="form-label">Descrição</label>
+                <input type="text" id="form-descricao" required data-descricao>
+            </div>
+            <select name="category" id="produto-row" data-type="category" class="form-select" required data-row>
+                <option value selected disabled>Selecione uma categoria: </option>
+                <option value="star-wars">Star Wars</option>
+                <option value="consoles">Consoles</option>
+                <option value="diversos">Diversos</option>
+            </select>
+            <input type="submit" value="Adicionar produto" class="botao form-button">
+        </form>
+    </main>
     <footer class="footer">
         <div class="footer-container">
             <section class="footer-logo">
@@ -75,7 +86,6 @@
         <label>Desenvolvido por Sério Valério</label>
         <label>2022</label>
     </div>
-    <script type="module" src="/JS/todosProdutos-controller.js"></script>
-    <!-- <script type="module" src="./Js/atualizaProduto-controller.js"></script> -->
+    <script type="module" src="/Js/cadastraProdutos-controller.js"></script>
 </body>
 </html>

@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 152px;
-    height: 115px;
+    margin: 0 9.5rem;
+    height: 7.2rem;
 }
 
 .header-logoSearch {
@@ -13,7 +13,7 @@
 }
 
 .header-logo--link {
-    margin-right: 32px;
+    margin-right: 2rem;
 }
 
 .header-searchBar--container {
@@ -31,7 +31,7 @@
     border: none;
     background-color: #f5f5f5;
     outline: none;
-    width: 393px;
+    width: 24.5rem;
 }
 
 .header-searchBar::placeholder {

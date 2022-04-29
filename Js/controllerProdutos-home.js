@@ -58,6 +58,3 @@ onValue(dbRef, (snapshot) => {
         }
     })
 })
-
-
-

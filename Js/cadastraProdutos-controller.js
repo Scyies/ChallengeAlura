@@ -1,6 +1,23 @@
 import { produtosService } from "./produtosService.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+import { getDatabase, ref, set, onValue, get, child, push, update } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBYxucnxHmgCX4fPPDL1JFhCnXqVcSG4Cg",
+    authDomain: "alurageek-test.firebaseapp.com",
+    databaseURL: "https://alurageek-test-default-rtdb.firebaseio.com",
+    projectId: "alurageek-test",
+    storageBucket: "alurageek-test.appspot.com",
+    messagingSenderId: "941261808244",
+    appId: "1:941261808244:web:03e5598d3b729d8e986721",
+    measurementId: "G-X5D53K656V"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 const formulario = document.querySelector('[data-form]');
+const db = getDatabase();
 
 formulario.addEventListener('submit', (evento) => {
     evento.preventDefault();
@@ -10,18 +27,32 @@ formulario.addEventListener('submit', (evento) => {
     const imagem = evento.target.querySelector('#drag-preview').src
     const row = evento.target.querySelector('[data-row]').options.selectedIndex
 
-    produtosService.criaProduto(imagem, nome, preco, descricao, row)
-    .then(() => {
+    const dbRef = ref(getDatabase());
+    get(child(dbRef, 'produtos/'))
+    .then((snapshot) => {const newId = snapshot.val().length
+
+    set(ref(db, 'produtos/' + newId), {
+        nome: nome,
+        preco: preco,
+        descricao: descricao,
+        imagem: imagem,
+        row: row,
+        id: newId
+    })
+    .then (() => {
+        alert("data saved")
         window.location.href = '../todos-produtos.html'
-    });
+    })
+    .catch ((error) => {
+        console.error(error)
+    })
+})
 })
 
 const imgInput = document.querySelector('#escolher-img');
 const previewContainer = document.querySelector('.drag-area');
 const imgUpload = previewContainer.querySelector('#drag-preview');
 const imgPreviewDefault = previewContainer.querySelector('.drag-img');
-console.log(imgUpload);
-console.log(imgPreviewDefault);
 
 imgInput.addEventListener('change', function () {
     const file = this.files[0];
@@ -29,7 +60,7 @@ imgInput.addEventListener('change', function () {
     if (file) {
         const reader = new FileReader();
 
-        imgInput.style.display = 'block'
+        imgUpload.style.display = 'block'
         imgPreviewDefault.style.display = 'none'
 
         reader.addEventListener('load', function () {

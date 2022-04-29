@@ -62,3 +62,9 @@
     height: 100%;
     width: 65%;
 }
+
+.drag-preview {
+    max-height: 150px;
+    max-width: 280px;
+    display: none;
+}

@@ -1,10 +1,10 @@
 .footer {
     background-color: #EAF2FD;
-    height: 368px;
+    height: 23rem;
 }
 
 .footer-container {
-    padding: 64px 156px;
+    padding: 4rem 9.75rem;
     display: flex;
     height: 100%;
     width: 100%;
@@ -47,7 +47,7 @@
     flex-direction: column;
     margin-bottom: 5px;
     /* height: 56px; */
-    width: 350px;
+    width: 22rem;
 }
 
 .footer-nome--faleConosco {

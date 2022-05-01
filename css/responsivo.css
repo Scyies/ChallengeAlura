@@ -248,4 +248,15 @@
         width: 275px;
         box-sizing: border-box;
     }
+
+    /* TODOS PRODUTOS PAGE  */
+
+    .container-titulo-btn {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+    .titulo {
+        margin-bottom: 1rem;
+    }
 }

@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+    .produtos-primeiraRow, .produtos-segundaRow, .produtos-terceiraRow {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        column-gap: 1%;
+        margin-bottom: 64px;
+        overflow: hidden;
+    }
+    .header {
+        margin: 0 0rem;
+        padding: 0 1rem;
+        height: 3.6rem;
+    }
+    .header-searchBar {
+        max-width: 20rem;
+        min-width: 3rem;
+    }
+    .header-searchBar--container {
+        min-width: 50px;
+    }
+    .header-login {
+        padding: 12px 50px;
+        font-size: 14px;
+    }
+    .header-logo--img {
+        height: 28px;
+        width: 100px;
+    }
+    .banner-escritas {
+        margin-left: 0rem;
+        padding-left: 1rem;
+    }
+    .produtos-container {
+        padding: 2rem 1rem;
+    }
+    .produto {
+        max-width: 200px;
+    }
+    .footer-container {
+        padding: 2rem 1rem;
+    }
+    .footer-alurageek-escritas-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-escritas {
+        flex-grow: 1;
+    }
+}

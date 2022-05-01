@@ -21,6 +21,7 @@
     background-color: #f5f5f5;
     padding: 8px 16px 8px 16px;
     border-radius: 20px;
+    min-width: 150px;
 }
 
 .header-searchBar--container:hover {
@@ -31,7 +32,7 @@
     border: none;
     background-color: #f5f5f5;
     outline: none;
-    width: 24.5rem;
+    width: 100%;
 }
 
 .header-searchBar::placeholder {

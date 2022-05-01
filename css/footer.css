@@ -9,12 +9,16 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-/* .footer-logo {
+.footer-alurageek-escritas-container {
+    display: flex;
+}
 
-} */
+.footer-logo--img {
+    margin-right: 1rem;
+}
 
 .footer-escritas {
     display: flex;
@@ -46,7 +50,6 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
-    /* height: 56px; */
     width: 22rem;
 }
 

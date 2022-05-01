@@ -47,4 +47,37 @@
     .footer-escritas {
         flex-grow: 1;
     }
+    .rodape-contato {
+        height: 57px;
+    }
+    
+    /* ADICIONAR PRODUTO PAGE */
+
+    .form {
+        max-width: calc(768px - 2rem);
+    }
+    .image-input-container {
+        justify-content: space-between;
+    }
+    .drag-area {
+       max-width: 254px;
+    }
+    .main-form {
+        padding: 1rem 1rem;
+    }
+    #escolher-img {
+        max-width: 283px;
+    }
+    .form-titulo {
+        font-size: 22px;
+    }
+    .form-div {
+        max-width: calc(768px - 2rem);
+    }
+    .form-select {
+        max-width: calc(768px - 2rem);
+    }
+    .form-button {
+        max-width: calc(768px - 2rem);
+    }
 }

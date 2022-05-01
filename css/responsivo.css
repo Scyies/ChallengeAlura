@@ -180,4 +180,22 @@
     #footer-nome--faleConosco {
         max-width: 320px;
     }
+
+    /* DESCRICAO PRODUTOS  */
+
+    .descricao {
+        flex-direction: column;
+    }
+    .descricao-imagem {
+        margin-bottom: 2rem;
+    }
+    .produtos {
+        padding-bottom: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        column-gap: 2%;
+    }
+    .produto {
+        margin-bottom: 1rem;
+    }
 }

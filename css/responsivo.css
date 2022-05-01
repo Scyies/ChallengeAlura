@@ -60,7 +60,7 @@
         justify-content: space-between;
     }
     .drag-area {
-       max-width: 254px;
+       max-width: 283px;
     }
     .main-form {
         padding: 1rem 1rem;
@@ -123,5 +123,61 @@
         padding-top: 2rem;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    /* LOGIN PAGE */
+
+    .header-login {
+        padding: 12px 25px;
+    }
+    .header-logo--link {
+        margin-right: .5rem;
+    }
+    .header-searchBar {
+        max-width: 20rem;
+        min-width: 1rem;
+    }
+    .header-searchBar--container{
+        max-width: 20rem;
+        min-width: 1rem;
+    }
+    .escolher-img-label {
+        display: none;
+    }
+    #escolher-img {
+        width: 100%;
+        max-width: 283px;
+    }
+    .image-input-container {
+        justify-content: center;
+    }
+    .drag-area {
+        width: 100%;
+    }
+
+    .footer {
+        height: auto;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-alurageek-escritas-container {
+        align-items: center;
+    }
+    .footer-escritas {
+        align-items: center;
+    }
+    .footer-escritas--escrita {
+        margin-bottom: 1rem;
+    }
+    .footer-inputNome--container {
+        max-width: 320px;
+        width: 100%;
+    }
+    #footer-nome--faleConosco {
+        max-width: 320px;
     }
 }

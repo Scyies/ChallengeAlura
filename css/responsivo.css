@@ -80,4 +80,22 @@
     .form-button {
         max-width: calc(768px - 2rem);
     }
+
+    /* TODOS PRODUTOS PAGE */
+
+    .descricao {
+        padding: 2rem 1rem;
+    }
+    .descricao-imagem {
+        max-width: 254px;
+        max-height: 157px;
+    }
+    .descricao-titulo {
+        font-size: 22px;
+    }
+    .produtos {
+        padding-bottom: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
 }

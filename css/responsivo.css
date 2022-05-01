@@ -81,7 +81,7 @@
         max-width: calc(768px - 2rem);
     }
 
-    /* TODOS PRODUTOS PAGE */
+    /* DESCRIÇÃO PRODUTOS PAGE */
 
     .descricao {
         padding: 2rem 1rem;
@@ -109,5 +109,19 @@
     .login-entrar {
         font-size: 14px;
         max-width: 109px;
+    }
+
+    /* TODOS PRODUTOS PAGE */
+
+    .titulo {
+        font-size: 22px;
+    }
+    .adicionar-btn {
+        font-size: 14px;
+    }
+    .main-todos-produtos {
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }

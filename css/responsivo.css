@@ -240,4 +240,12 @@
         column-gap: 2%;
         margin-bottom: .5rem;
     }
+
+    /* LOGIN PAGE  */
+
+    .input {
+        max-width: 275px;
+        width: 275px;
+        box-sizing: border-box;
+    }
 }

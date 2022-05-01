@@ -31,6 +31,9 @@
         margin-left: 0rem;
         padding-left: 1rem;
     }
+    .banner-titulo {
+        margin-top: 9rem;
+    }
     .produtos-container {
         padding: 2rem 1rem;
     }
@@ -206,5 +209,35 @@
         justify-content: center;
     }
 
-    
+    /* HOME PAGE  */
+
+    .banner {
+        max-height: 192px;
+        position: relative;
+    }
+    .banner-img {
+        object-fit: cover;
+    }
+    .banner-escritas {
+        height: 100%;
+        margin-top: 10%;
+    }
+    .banner-titulo {
+        font-size: 22px;
+        margin-top: 1rem;
+    }
+    .banner-promocao {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .banner-botao {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .produtos-primeiraRow, .produtos-segundaRow, .produtos-terceiraRow {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        column-gap: 2%;
+        margin-bottom: .5rem;
+    }
 }

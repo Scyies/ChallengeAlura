@@ -198,4 +198,13 @@
     .produto {
         margin-bottom: 1rem;
     }
+
+    /* EDITAR PRODUTOS  */
+
+    .drag-area {
+        display: flex;
+        justify-content: center;
+    }
+
+    
 }

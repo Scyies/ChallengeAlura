@@ -3,7 +3,7 @@
 ## Geral
 
 Esse projeto é uma página de e-commerce em sua versão do administrador para uma loja online chamada Alura Geek, que está sendo desenvolvida como resutlado de um Desafio
-de Fron-End exclusivo para alunas da escola de tecnologia Alura. Sendo que o modelo encontra-se neste link https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104
+de Fron-End exclusivo para alunas da escola de tecnologia Alura. Sendo que o modelo encontra-se neste [Link](https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104)
 
 ## Sobre o desafio
 
@@ -20,7 +20,7 @@ O Desafio durou 4 semanas, sendo organizado da seguinte maneira:
 ## General
 
 This project was developed as a e-commerce page (admin version) for a store named Alura Geek, the development was the result of a exclusive challenge for students of Alura tech school.
-The original prototype on Figma can be seen here: https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104
+The original prototype on Figma can be seen here: [Link](https://www.figma.com/proto/itJpWbvHxSUcUeMPy1lmof/AluraGeek?node-id=55%3A1104&scaling=scale-down&page-id=0%3A1&starting-point-node-id=55%3A1104)
 
 ## About the challenge
 

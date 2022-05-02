@@ -15,7 +15,9 @@ O Desafio durou 4 semanas, sendo organizado da seguinte maneira:
 * Semana 3: Validação dos formulários (login, contato e cadastro de produtos), criação de rotas, controllers e implementação do banco de dados.
 * Semana 4: Finalização do projeto com cadastro dos produtos no banco de dados e funcionaldiade de adicionar/editar produtos.
 
-*English Version
+----
+
+*English Version*
 
 ## General
 

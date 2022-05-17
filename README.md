@@ -15,6 +15,10 @@ O Desafio durou 4 semanas, sendo organizado da seguinte maneira:
 * Semana 3: Validação dos formulários (login, contato e cadastro de produtos), criação de rotas, controllers e implementação do banco de dados.
 * Semana 4: Finalização do projeto com cadastro dos produtos no banco de dados e funcionaldiade de adicionar/editar produtos.
 
+## Atualizações restantes
+
+Adicionar funcionalidade para a barra de pesquisa do site.
+
 ----
 
 *English Version*
@@ -33,3 +37,7 @@ The challenge lasted 4 weeks with the following goals:
 * Week 2: Implementation of dynamic changes to HTML.
 * Week 3: Form validations (login, contact and product registration), creation of routes and controllers and database implementation.
 * Week 4: Project conclusion, products registration on the database and new product/edition functionality.
+
+## Future updates
+
+Make a functioning searchbar.

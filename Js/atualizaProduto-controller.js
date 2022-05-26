@@ -49,6 +49,7 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
+    console.log('estou logado');
     const uid = user.uid;
     // ...
   } else {
@@ -80,7 +81,7 @@ formulario.addEventListener('submit', (e) => {
         console.log(atualizacao)
         return update(ref(db), atualizacao);
     }
-    atualizaProduto(inputNome.value, inputNome.value, inputPreco.value, inputImagem.src, inputDescricao.value, inputRow.options.selectedIndex)
+    atualizaProduto(id, inputNome.value, inputPreco.value, inputImagem.src, inputDescricao.value, inputRow.options.selectedIndex)
 
     window.location.href = "../todos-produtos.html"
 })

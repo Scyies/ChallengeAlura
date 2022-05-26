@@ -34,7 +34,7 @@ get(child(dbRef, 'produtos/'))
 .then((snapshot) => {
     if (snapshot.exists()){
         const data = snapshot.val()
-            produtos = data.map(produto => {
+            produtos = data.forEach(produto => {
                 const linhaProdutoNovo = document.createElement('div');
                 linhaProdutoNovo.classList.add("produto");
                 const card = `
@@ -67,7 +67,6 @@ repositorio.addEventListener('click', (evento) => {
     let botaoDeletar = evento.target.className === 'btn-excluir';
     if (botaoDeletar) {
         const getId = evento.target.closest('[data-id]').dataset.id;
-        console.log(getId);
         remove(ref(db, 'produtos/' + getId))
         .then(() => {
             alert('data removed');

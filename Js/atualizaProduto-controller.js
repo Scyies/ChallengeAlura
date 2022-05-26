@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-import { getDatabase, ref, set, onValue, get, child, push, update } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+import { getDatabase, ref, get, child, update } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
 
 const pegaURL = new URL(window.location);
 
@@ -34,7 +35,6 @@ get(child(dbRef, `produtos/${id}`))
         inputImagem.src = snapshot.val().imagem;
         inputDescricao.value = snapshot.val().descricao;
         inputRow.options.selectedIndex = snapshot.val().row;
-        console.log(inputImagem)
     }
     else {
         console.log("No data");
@@ -44,7 +44,18 @@ get(child(dbRef, `produtos/${id}`))
     console.error(error);
 });
 
-
+const auth = getAuth();
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    const uid = user.uid;
+    // ...
+  } else {
+    // User is signed out
+    // ...
+  }
+});
 
 const formulario = document.querySelector('[data-form]');
 

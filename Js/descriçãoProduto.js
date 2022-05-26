@@ -25,7 +25,7 @@ const db = getDatabase();
 const dbRef = ref(db, 'produtos');
 onValue(dbRef, (snapshot) => {
     const data = snapshot.val()
-    produtos = data.map(produto => {
+    produtos = data.forEach(produto => {
         const card = produtosTemplate.content.cloneNode(true).children[0];
         const nome = card.querySelector('[data-nome]');
         const preco = card.querySelector('[data-preco]');

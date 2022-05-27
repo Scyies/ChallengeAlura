@@ -15,7 +15,7 @@ O Desafio durou 4 semanas, sendo organizado da seguinte maneira:
 * Semana 3: Validação dos formulários (login, contato e cadastro de produtos), criação de rotas, controllers e implementação do banco de dados.
 * Semana 4: Finalização do projeto com cadastro dos produtos no banco de dados e funcionaldiade de adicionar/editar produtos.
 
-Dentro do projeto, para acessar a área de administrador e editar, adicionar ou excluir novos produtos: Login: Admin, Senha: Admin.
+Dentro do projeto, para acessar a área de administrador e editar, adicionar ou excluir novos produtos: Login: admin@admin.com, Senha: Admin1.
 
 ## Atualizações restantes
 
@@ -40,7 +40,7 @@ The challenge lasted 4 weeks with the following goals:
 * Week 3: Form validations (login, contact and product registration), creation of routes and controllers and database implementation.
 * Week 4: Project conclusion, products registration on the database and new product/edition functionality.
 
-Inside the site, if you want to enter the administration area to edit, add or delete products, the Login is: Admin, and password: Admin.
+Inside the site, if you want to enter the administration area to edit, add or delete products, the Login is: admin@admin.com, and password: Admin1.
 
 ## Future updates
 
